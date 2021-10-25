@@ -1,0 +1,26 @@
+.map-section {
+    background-image: url(../assets/elemental-symbols.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:380px;
+}
+
+.link {
+    width: 30%;
+    height: 90%;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-section {
+    display: flex;
+    flex-direction: row;
+    padding-left: -30px;
+}
+
+.link:hover {
+    border: solid gold 14px;
+    border-radius: 50%;
+}

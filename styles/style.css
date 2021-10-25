@@ -95,19 +95,19 @@ footer {
   
   @keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+      transform: rotate3d(-10, -145, -10, 90deg) scale(0.7);
     }
 
     40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+        transform: rotate3d(10, 10, -45, 180deg) scale(0.5);
     }
 
     60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+        transform: rotate3d(-45, 10, 10, 240deg) scale(0.7);
       }
 
     80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+        transform: rotate3d(10, 45, 10, 300deg) scale(0.5);
     }
 
   }
