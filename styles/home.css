@@ -1,1 +1,31 @@
 /* add home page styles here */
+.radioimg {
+    border-radius: 50%;
+    width: 100px;
+    /* border: transparent solid 5px; */
+}
+
+.radioimg:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+#character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#character * {
+    margin: 20px 5px 20px 5px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked+img{
+border: yellowgreen solid 5px;
+filter: invert(100%);
+}

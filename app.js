@@ -1,6 +1,8 @@
 // import functions and grab DOM elements
+let character = document.getElementById('charcter');
 
 // initialize global state
+
 
 // set event listeners 
   // get user input
