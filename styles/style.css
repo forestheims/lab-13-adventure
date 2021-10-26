@@ -71,7 +71,8 @@ h2 {
 }
 
 .main-logo {
-    animation: pulse 5s infinite ease-in-out;
+    width: 250px;
+    animation: pulse 10s ease-in-out;
 }
 
 header img {
@@ -94,20 +95,37 @@ footer {
 }
   
   @keyframes pulse {
+    0% {
+        transform: rotate(0) scale(1);
+      }
+    10% {
+        transform: rotate(-360deg) scale(1);
+      }
     20% {
-      transform: rotate3d(-10, -145, -10, 90deg) scale(0.7);
+      transform: rotate3d(0, 0, 0, 60deg) scale(1);
+      filter: rotate(90deg);
     }
 
-    40% {
-        transform: rotate3d(10, 10, -45, 180deg) scale(0.5);
+    30% {
+        transform: rotate3d(0, 360, 0, 360deg) scale(1);
     }
+
+    50% {
+        transform: rotate(0deg) scale(1);
+      }
 
     60% {
-        transform: rotate3d(-45, 10, 10, 240deg) scale(0.7);
+        filter: invert(0%);
+        transform: rotate3d(360, 0, 0, 360deg) scale(1);
       }
 
     80% {
-        transform: rotate3d(10, 45, 10, 300deg) scale(0.5);
+        filter: invert(95%);
+        transform: rotate3d(0, 0, 0, 360deg) scale(0.5);
     }
 
+    100% {
+        filter: invert(0%);
+        transform: rotate3d(0, 0, 0, 0deg) scale(1);
+    }
   }
