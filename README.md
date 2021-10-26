@@ -9,10 +9,10 @@
     - [x] submit button
 
 * Events
-- [ ] Form Submit
-    - [ ] Generate User Object
-        - [ ] Store in LS
-            - [ ] Redirect to **Map**
+ [x] Form Submit
+    - [x] Generate User Object
+        - [x] Store in LS
+            - [x] Redirect to **Map**
 
 ## Map Page
 
