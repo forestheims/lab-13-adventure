@@ -30,3 +30,19 @@ export function scoreQuest(choiceObject, questId, userObject) {
     userObject.gold += choiceObject.gold;
     userObject.completed[questId] = true;
 }
+
+export function renderUser(user, element) {
+    const name = document.createElement('span');
+    name.textContent = `Name: ${user.name}`;
+    name.classList.add('useinf');
+    const clas = document.createElement('span');
+    clas.textContent = `Class: ${user.class}`;
+    clas.classList.add('useinf');
+    const gold = document.createElement('span');
+    gold.textContent = `Gold: ${user.gold}`;
+    gold.classList.add('useinf');
+    const hp = document.createElement('span');
+    hp.textContent = `Health: ${user.hp}`;
+    hp.classList.add('useinf');
+    element.append(name, clas, gold, hp);
+}
