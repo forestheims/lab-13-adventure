@@ -83,26 +83,26 @@ const water = {
     id:'water',
     title:'Water',
     map: {},
-    image: '',
+    image: './assets/dione.jpg',
     description: '',
     choices: [{
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'river',
+        description:'River',
+        result: 'A damn was built',
+        hp: -5,
+        gold: 10
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'ocean',
+        description:'Ocean',
+        result: 'A deep sea oil drilling plant malfunctioned, releasing 90,000 gallons of oil into the ocean each day',
+        hp: -5,
+        gold:-30
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'rain',
+        description:'Rain',
+        result: 'Refreshing rain vists regularly',
+        hp: 20,
+        gold: 20
     }]
 };
 

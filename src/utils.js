@@ -29,6 +29,8 @@ export function scoreQuest(choiceObject, questId, userObject) {
     userObject.hp += choiceObject.hp;
     userObject.gold += choiceObject.gold;
     userObject.completed[questId] = true;
+    console.log(userObject);
+    console.log(choiceObject);
 }
 
 export function renderUser(user, element) {
