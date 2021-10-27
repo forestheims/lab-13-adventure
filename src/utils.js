@@ -4,17 +4,13 @@ export function generateUser(userData) {
         class: userData.get('class'),
         hp: 12,
         gold: 10,
-        completed: [
-            { earth: false,
-                choice: 0 },
-            { air: false,
-                choice: 0 },
-            { fire: false,
-                choice: 0 },
-            { water: false,
-                choice: 0 }
-        ] };
-}
+        completed: {
+            // earth: false,
+            // air: false,
+            // fire: false,
+            // water: false
+        }
+    };}
 
 export function findById(array, id) {
     for (let element of array) {
