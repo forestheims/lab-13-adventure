@@ -4,13 +4,9 @@ export function generateUser(userData) {
         class: userData.get('class'),
         hp: 12,
         gold: 10,
-        completed: {
-            // earth: false,
-            // air: false,
-            // fire: false,
-            // water: false
-        }
-    };}
+        completed: {}
+    };
+}
 
 export function findById(array, id) {
     for (let element of array) {
@@ -18,4 +14,19 @@ export function findById(array, id) {
             return element;
         }
     }
+}
+
+export function hasCompletedAllQuests(userObject, quests) {
+    for (let quest of quests) {
+        if (!userObject.completed[quest.id]) {
+            return false;
+        }
+        return true;
+    }
+}
+
+export function scoreQuest(choiceObject, questId, userObject) {
+    userObject.hp += choiceObject.hp;
+    userObject.gold += choiceObject.hp;
+    userObject.completed[questId] = true;
 }
