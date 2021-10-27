@@ -27,6 +27,6 @@ export function hasCompletedAllQuests(userObject, quests) {
 
 export function scoreQuest(choiceObject, questId, userObject) {
     userObject.hp += choiceObject.hp;
-    userObject.gold += choiceObject.hp;
+    userObject.gold += choiceObject.gold;
     userObject.completed[questId] = true;
 }

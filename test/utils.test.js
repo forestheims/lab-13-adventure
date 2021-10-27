@@ -62,13 +62,28 @@ test('hasCompletedAllQuests should return true if user has completed all quests'
 test('scoreQuest should update userObject data', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const user = { 
+        name: 'tenor',
+        class: 'alchemist',
+        hp: 12,
+        gold: 10,
+        completed: {}
+    };
+    const choiceObject = {
+        id: 'earth',
+        hp: -6,
+        gold: -9,
+        description: 'Dig Dig Dig',
+        result: 'You hit your toe with a pick axe and have to go back into town for bandages and antibiotics.',
+    };
+    const questId = 'earth';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
-
+    scoreQuest(choiceObject, questId, user);
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(user.hp, 6);
+    expect.equal(user.gold, 1);
+    expect.equal(user.completed[questId], true);
 });
