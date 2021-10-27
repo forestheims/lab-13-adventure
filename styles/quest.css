@@ -36,3 +36,7 @@ img {
     width: 10vw;
     height: 10vw;
 }
+
+.hidden {
+    display: none;
+}

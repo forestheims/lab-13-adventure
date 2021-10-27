@@ -1,0 +1,9 @@
+.use {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 20px;
+}
+
+.useinf {
+    margin: -6px;
+}

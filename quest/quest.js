@@ -3,7 +3,7 @@ import { getStorage, setStorage } from '../src/storage-utils.js';
 import { findById, renderUser, scoreQuest } from '../src/utils.js';
 
 const userDiv = document.getElementById('user-info');
-const main = document.getElementById('main');
+const mainQuest = document.getElementById('main-quest');
 const questTitle = document.getElementById('quest-title');
 
 const params = new URLSearchParams(window.location.search);
@@ -50,7 +50,7 @@ questForm.append(button);
 questTitle.textContent = quest.title;
 questImg.src = `.${quest.image}`;
 questStory.textContent = quest.description;
-main.append(questImg, questStory, questForm);
+mainQuest.append(questImg, questStory, questForm);
 
 questForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -61,4 +61,15 @@ questForm.addEventListener('submit', (e) => {
     setStorage('USER', user);
     userDiv.innerHTML = '';
     renderUser(user, userDiv);
+
+    let resultDiv = document.getElementById('results');
+    let resultP = document.createElement('p');
+    resultP.textContent = choice.result;
+    let linkM = document.createElement('a');
+    linkM.textContent = 'Back to the Map';
+    linkM.href = '../map';
+    resultDiv.classList.remove('hidden');
+    mainQuest.classList.add('hidden');
+
+    resultDiv.append(resultP, linkM);
 });

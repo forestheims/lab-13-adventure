@@ -21,8 +21,8 @@ export function hasCompletedAllQuests(userObject, quests) {
         if (!userObject.completed[quest.id]) {
             return false;
         }
-        return true;
     }
+    return true;
 }
 
 export function scoreQuest(choiceObject, questId, userObject) {
