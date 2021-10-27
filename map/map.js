@@ -16,7 +16,7 @@ function renderSpan(quest) {
 
 function renderLink(quest) {
     const x = document.createElement('a');
-    x.href = `../quest?id=${quest.id}`;
+    x.href = `../quest/?id=${quest.id}`;
     x.textContent = quest.title;
     x.classList.add('cccs');
     linkSpace.appendChild(x);

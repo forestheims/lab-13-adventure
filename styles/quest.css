@@ -7,3 +7,17 @@
 .useinf {
     margin: -6px;
 }
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+#quest-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#quest-form * {
+    margin: 10px 0px 10px 0px;
+}
