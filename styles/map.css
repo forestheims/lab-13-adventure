@@ -24,3 +24,29 @@
     border: solid gold 14px;
     border-radius: 50%;
 }
+
+.cccs {
+    margin: 40px;
+    z-index: top;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: goldenrod;
+}
+
+.csss {
+    margin: 40px;
+    z-index: top;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: grey;
+}
+
+.use {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 20px;
+}
+
+.useinf {
+    margin: -6px;
+}

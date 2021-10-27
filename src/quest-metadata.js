@@ -1,6 +1,6 @@
 const earth = {
-    id:'',
-    title:'',
+    id:'earth',
+    title:'Earth',
     map: {},
     image: '',
     description: '',
@@ -26,8 +26,8 @@ const earth = {
 };
 
 const fire = {
-    id:'',
-    title:'',
+    id:'fire',
+    title:'Fire',
     map: {},
     image: '',
     description: '',
@@ -53,8 +53,8 @@ const fire = {
 };
 
 const air = {
-    id:'',
-    title:'',
+    id:'air',
+    title:'Air',
     map: {},
     image: '',
     description: '',
@@ -80,8 +80,8 @@ const air = {
 };
 
 const water = {
-    id:'',
-    title:'',
+    id:'water',
+    title:'Water',
     map: {},
     image: '',
     description: '',
@@ -106,4 +106,4 @@ const water = {
     }]
 };
 
-export const quests = [earth, air, fire, water]
+export const quests = [earth, air, fire, water];

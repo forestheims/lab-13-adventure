@@ -17,24 +17,24 @@
 ## Map Page
 
 * HTML Elements
-- [ ] Character Info
+- [x] Character Info
 - [x] Links to Quests -- using URLSearchParameters
-- [ ] Story info -- state based, dynamically renders above the Map
+- [x] Story info -- state based, dynamically renders above the Map
 
 * Events
-- [ ] OnClick -- redirect to quest page when any other quests are selected
-    - [ ] Once Quest is Complete, making it not click-on-able
-- [ ] On Page Load -- IF(quests: completed)
+- [x] OnClick -- redirect to quest page when link selected
+    - [x] Once Quest is Complete, making it not click-on-able
+- [x] On Page Load -- IF(quests: completed)
 
 ## Quest Page
 * HTML Elements
-- [ ] Character Info
-- [ ] Title
-- [ ] Image
-- [ ] Quest story description
-- [ ] Form with: 
-    - [ ] Radio selectors
-    - [ ] Submit Button
+- [x] Character Info
+- [x] Title
+- [x] Image
+- [x] Quest story description
+- [x] Form with: 
+    - [x] Radio selectors
+    - [x] Submit Button
 
 * Events
 - [ ] On Page Load
