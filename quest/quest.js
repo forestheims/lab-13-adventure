@@ -56,7 +56,9 @@ questForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let user = getStorage('USER');
     const selectedChoice = document.querySelector('input[type="radio"]:checked');
-    scoreQuest(selectedChoice, quest.id, user);
+    const choice = findById(quest.choices, selectedChoice.value);
+    scoreQuest(choice, quest.id, user);
     setStorage('USER', user);
+    userDiv.innerHTML = '';
     renderUser(user, userDiv);
 });

@@ -2,26 +2,26 @@ const earth = {
     id:'earth',
     title:'Earth',
     map: {},
-    image: '',
-    description: '',
+    image: './assets/dione.jpg',
+    description: 'Round rocks roll rambunctiously, remembering responsibilities, reading records, repeating revolutions',
     choices: [{
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'crystal',
+        description:'Crystal',
+        result:'Curiousty created use cases for the treasures of the Earth',
+        hp:20,
+        gold:20
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'cave',
+        description:'Cave',
+        result:'This was not the kind of cave you were anticipating...',
+        hp:-5,
+        gold:-5
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'clay',
+        description:'Clay',
+        result:'Civilisation is built with walls, water, and work',
+        hp:20,
+        gold:20
     }]
 };
 
@@ -29,26 +29,26 @@ const fire = {
     id:'fire',
     title:'Fire',
     map: {},
-    image: '',
-    description: '',
+    image: './assets/dione.jpg',
+    description: 'Frequent filtering of past finished, for free futures. Filming, flipping, frantic, fearless, for the glory',
     choices: [{
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'campfire',
+        description:'Campfire',
+        result:'Warm and comforting',
+        hp:5,
+        gold:-2
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'wildfire',
+        description:'Wildfire',
+        result:'West coast worries, world wind whisps smoke all around',
+        hp:-15,
+        gold:-40
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'furnace',
+        description:'Furnace',
+        result:'Financial futures are fiscally first focus',
+        hp:-5,
+        gold:20
     }]
 };
 
@@ -56,26 +56,26 @@ const air = {
     id:'air',
     title:'Air',
     map: {},
-    image: '',
-    description: '',
+    image: './assets/dione.jpg',
+    description: 'Apparently it does not appear, but it is there. We can smell it and feel it, but seeing it requires imagination',
     choices: [{
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'wind',
+        description:'Wind',
+        result:'Generating power and providing fresh air',
+        hp:10,
+        gold:20
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'ozone',
+        description:'Ozone',
+        result:'Protecting life on earth from over-radiation, it has been depleted',
+        hp:-9,
+        gold:50
     }, {
-        id:'',
-        description:'',
-        result:'',
-        hp:'',
-        gold:''
+        id:'aroma',
+        description:'Aroma',
+        result:'Sweet and Soft',
+        hp:20,
+        gold:-10
     }]
 };
 
@@ -84,7 +84,7 @@ const water = {
     title:'Water',
     map: {},
     image: './assets/dione.jpg',
-    description: '',
+    description: 'Water on Mars',
     choices: [{
         id:'river',
         description:'River',

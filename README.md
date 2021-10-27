@@ -37,10 +37,10 @@
     - [x] Submit Button
 
 * Events
-- [ ] On Page Load
-    - [ ] access URLSearch Parameters to render content on the page
-- [ ] Form Submit -- Made a choice in a quest
-    - [ ] Update User Object
+- [x] On Page Load
+    - [x] access URLSearch Parameters to render content on the page
+- [x] Form Submit -- Made a choice in a quest
+    - [x] Update User Object
     - [ ] Render Results
     - [ ] Provide a link back to Map
 
