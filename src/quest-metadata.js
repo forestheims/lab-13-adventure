@@ -19,7 +19,7 @@ const earth = {
     }, {
         id:'clay',
         description:'Clay',
-        result:'Civilisation is built with walls, water, and work',
+        result:'Civilisations are built with walls, water, and work',
         hp:20,
         gold:20
     }]
@@ -106,4 +106,4 @@ const water = {
     }]
 };
 
-export const quests = [earth, air, fire, water];
+export const quests = [fire, air, earth, water];

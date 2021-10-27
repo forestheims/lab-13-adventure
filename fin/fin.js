@@ -13,6 +13,9 @@ linkAgain.href = '../';
 
 if (user.hp > 0) {
     results.textContent = 'You survived, and live another day to contemplate this existence.';
+    if (user.gold < 0) {
+        results.textContent = 'You survived, and live another day to contemplate this existence. Though, you are in debt. You have used up your resources and then some. What next?..';
+    }
 } else {
     results.textContent = 'You did not make it through this app with enough health points. Try again next time.';
 }

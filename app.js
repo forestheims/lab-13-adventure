@@ -3,6 +3,7 @@ import { setStorage } from './src/storage-utils.js';
 import { generateUser } from './src/utils.js';
 
 const form = document.getElementById('character');
+localStorage.removeItem('USER');
 
 // set event listeners
 form.addEventListener('submit', (e) => {
