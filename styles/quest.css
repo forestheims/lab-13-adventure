@@ -21,3 +21,18 @@
 #quest-form * {
     margin: 10px 0px 10px 0px;
 }
+
+.label-choice {
+    color:crimson;
+    font-weight: 900;
+}
+
+.formy {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 10vw;
+    height: 10vw;
+}

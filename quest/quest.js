@@ -8,7 +8,6 @@ const questTitle = document.getElementById('quest-title');
 
 const params = new URLSearchParams(window.location.search);
 const quest = findById(quests, params.get('id'));
-console.log(quest);
 
 let user = getStorage('USER');
 renderUser(user, userDiv);
@@ -27,10 +26,29 @@ renderUser(user, userDiv);
 const questImg = document.createElement('img');
 const questStory = document.createElement('span');
 const questForm = document.createElement('form');
-const label1 = document.createElement('label');
-const radio
+questForm.classList.add('formy');
+const button = document.createElement('button');
+button.textContent = `Choose a form of ${quest.title}`;
+const choices = quest.choices;
+
+for (let choice of choices) {
+    const label = document.createElement('label');
+    label.classList.add('label-choice');
+    const radio = document.createElement('input');
+    const span = document.createElement('span');
+    span.textContent = choice.description;
+    radio.type = 'radio';
+    radio.name = 'choice';
+    radio.required = true;
+    radio.id = choice.id;
+    radio.value = choice.id;
+    label.append(radio, span);
+    questForm.append(label);
+}
+
+questForm.append(button);
 questTitle.textContent = quest.title;
-questImg.src = quest.image;
+questImg.src = `.${quest.image}`;
 questStory.textContent = quest.description;
 main.append(questImg, questStory, questForm);
 
@@ -38,7 +56,9 @@ questForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let user = getStorage('USER');
     const selectedChoice = document.querySelector('input[type="radio"]:checked');
-    scoreQuest(selectedChoice, quest.id, user);
+    const choice = findById(quest.choices, selectedChoice.value);
+    scoreQuest(choice, quest.id, user);
     setStorage('USER', user);
-    console.log(user);
+    userDiv.innerHTML = '';
+    renderUser(user, userDiv);
 });

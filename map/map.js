@@ -22,6 +22,7 @@ function renderLink(quest) {
     linkSpace.appendChild(x);
 }
 
+userDiv.innerHTML = '';
 renderUser(user, userDiv);
 
 if (user.hp <= 0 || hasCompletedAllQuests(user, quests)) {
